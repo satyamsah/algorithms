@@ -1,0 +1,47 @@
+package stringcompression;
+
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class StringCompressionWithRepeatation {
+
+	
+	public static void main(String args[]){
+		
+		
+		Scanner sc= new Scanner(System.in);
+		int n= sc.nextInt();
+		//String str="aaabbccaa";
+		StringBuilder sb1=new StringBuilder();
+		for(int i=0;i<n;i++){
+			sb1.append(sc.next());
+		}
+		String str=sb1.toString();
+		//String str="aaabbccaa";
+		sc.close();
+		
+		
+		
+		
+		
+		StringBuilder str= new StringBuilder();
+		
+		
+		
+		
+		StringBuilder sb=new StringBuilder();
+		for(Map.Entry<Character, Integer> singleval: map.entrySet()){
+			
+			sb.append(singleval.getKey());
+			sb.append(singleval.getValue());
+			
+		}
+		
+		System.out.println(sb.toString());
+		
+		
+		
+	}
+}

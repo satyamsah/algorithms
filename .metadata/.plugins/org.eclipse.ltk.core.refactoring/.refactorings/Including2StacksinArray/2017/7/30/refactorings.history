@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;naive.Max.java&apos; to &apos;MaximumDiffrence.java&apos;&#x0D;&#x0A;- Original project: &apos;Including2StacksinArray&apos;&#x0D;&#x0A;- Original element: &apos;naive.Max.java&apos;&#x0D;&#x0A;- Renamed element: &apos;naive.MaximumDiffrence.java&apos;" description="Rename compilation unit &apos;Max.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;naive{Max.java" name="MaximumDiffrence.java" references="false" stamp="1500870956923" version="1.0"/>
+</session>

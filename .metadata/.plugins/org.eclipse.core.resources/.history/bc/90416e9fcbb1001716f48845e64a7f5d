@@ -1,0 +1,62 @@
+//package _3SUM;
+//
+//import java.util.*;
+//class Solution {
+//    public List<List<Integer>> threeSum(int[] nums) {
+//        List<List<Integer>> listOfList= new ArrayList<>();
+//        for(int i=0;i<nums.length-2;i++){
+//            for(int j=i+1;j<nums.length-1;j++){
+//                 for(int k=j+1;k<nums.length;k++){
+//                    if(nums[i]+nums[j]+nums[k]==0){
+//                         ArrayList<Integer> singleList= new ArrayList<>();
+//                         singleList.add(nums[i]); singleList.add(nums[j]); singleList.add(nums[k]);
+//                         listOfList.add(singleList);
+//                    }
+//                }
+//            } 
+//        }
+//      
+//        return listOfList;
+//        
+//    }
+//}
+
+import java.util.*;
+class Solution {
+	
+	public static void main(String args[]){
+		
+		threeSum({1, 0, 1, 2, -1, -4});
+	}
+
+	public static List<List<Integer>> threeSum(int[] nums) {
+       Map<Integer, List<Integer>> map= new HashMap<>();
+       List<List<Integer>> listoflists= new ArrayList<>();
+        for(int i=0;i<nums.length-1;i++){
+             for(int j=i+1;j<nums.length;j++){
+                 List<Integer> list= new ArrayList<>();
+                 list.add(nums[i]);
+                 list.add(nums[j]);
+               map.put(nums[i]+nums[j],list);
+             }
+        }
+        
+        for(int i=0;i<nums.length;i++){
+            int temp=-nums[i];
+            if(map.containsKey(temp)){
+                 List<Integer> list= new ArrayList<>();
+                 list.add(nums[i]);
+                 List<Integer> elements= map.get(temp);
+                 for(int element : elements){
+                     list.add(element);
+                 }
+                
+                listoflists.add(list);
+                
+            }
+        }
+      
+       return listoflists;
+        
+    }
+}

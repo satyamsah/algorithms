@@ -1,0 +1,98 @@
+package abc;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Queue;
+
+public class EnqueAndDeque {
+
+	static class ImplQueue {
+
+		static Node front;
+		static Node last;
+		class Node
+		{
+			Node next=null;
+			Map<String, String> data;
+			
+			public Node( Map<String, String> data){
+			this.data=data;	
+			}
+		}
+		void add(Map<String, String> abc)
+		{
+			Node node = new Node(abc);
+			if(front==null && last==null)
+			{
+				front=node;
+				last=node;
+			}
+			else
+			{
+				
+				last.next=node;
+				last=node;
+				System.out.println(last.data);
+			}
+	 	}
+		 Map<String, String> remove()
+		{
+			if(front==null)
+			{
+				return null;
+			}
+			else
+			{
+			   Node temp=front;
+			   front=front.next;
+			   return temp.data;
+			}
+			
+			
+		}
+		 Map<String, String> peek()
+		{
+			return front.data;
+		}
+		 
+		RemoveCat(){
+			
+			while(peek().containsKey("Cat")){
+				
+			}
+			
+		}
+		RemoveDog(){
+			
+		}
+		
+		
+	}
+
+    static ImplQueue queue;
+    
+    
+	
+    public static void main(String arr[])
+	{
+    	
+    	Map<String ,String> map= new LinkedHashMap<String, String>();
+    	map.put("dog", "Amana");
+    	map.put("cat", "Joe");
+    	map.put("cat", "Jakx");
+    	map.put("dog", "race");
+    	map.put("cat", "Husky");
+    	int i=0;
+		while(i<=map.size()-1){
+			queue.add(map);
+			i++;
+		}
+		
+		System.out.println(queue.peek());
+        
+	}
+
+}

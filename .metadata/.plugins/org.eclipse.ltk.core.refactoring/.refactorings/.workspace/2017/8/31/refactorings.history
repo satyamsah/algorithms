@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ImplementQueueinStack&apos; to &apos;ImplementQueueUsingTwoStacks&apos;" description="Rename resource &apos;ImplementQueueinStack&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ImplementQueueinStack" name="ImplementQueueUsingTwoStacks" stamp="1501647299618" updateReferences="true"/>
+</session>

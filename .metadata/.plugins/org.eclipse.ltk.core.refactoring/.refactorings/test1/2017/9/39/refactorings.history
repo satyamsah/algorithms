@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;test1.BAC.java&apos; to &apos;generateIndex.java&apos;&#x0D;&#x0A;- Original project: &apos;test1&apos;&#x0D;&#x0A;- Original element: &apos;test1.BAC.java&apos;&#x0D;&#x0A;- Renamed element: &apos;test1.generateIndex.java&apos;" description="Rename compilation unit &apos;BAC.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;test1{BAC.java" name="generateIndex.java" references="false" stamp="1506300060285" version="1.0"/>
+</session>

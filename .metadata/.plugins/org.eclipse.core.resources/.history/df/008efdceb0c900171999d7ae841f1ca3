@@ -1,0 +1,31 @@
+import java.util.*;
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+
+      List <Integer> numsList = new ArrayList<>();
+        for( int num: nums){
+            numsList.add(num);
+        }
+       List<List<Integer>> resultarr = new ArrayList<>();
+        permuteUtil(numsList,0,nums.length,resultarr);
+    }
+    
+    public static List<List<Integer>> permuteUtil( List <Integer> numsList ,int left,int right,List <List<Integer>> resultarr){
+          if(left==right){
+             return resultarr.add(numsList);
+          }else{
+              for(int i=left;i<right;i++){
+                   swap(arr, left,i);
+                  return  permuteUtil(numsList,left+1,i,resultarr);
+                   swap(arr, left,i);
+              }
+             
+          }
+     }
+    public static  List<Integer> swap( List <Integer> numsList,int left,int i){
+        int temp= numsList[left];
+        numsList[left]= numsList[i];
+        numsList[i]= numsList[temp];
+        return numsList;
+    }
+}

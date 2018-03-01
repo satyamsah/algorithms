@@ -1,0 +1,64 @@
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+class Node{
+	Node left;
+	Node right;
+	int val;
+	Node(int val){
+		this.val=val;
+	}
+}
+public class BST {
+	
+	static Node root;
+	
+	static Node createBST(List<Integer> list){
+		if(list.size()==0){
+			return null;
+		}
+		return createBSTUtil(list,0,root);
+	}
+	
+
+	private static Node createBSTUtil(List<Integer> list, int i, Node node) {
+		if(node==null){
+			node=new Node(list.get(0));
+			i++;
+			return  createBSTUtil( list,i, node);
+		}else{
+			if(list.get(i)<node.val){
+				node.left=new Node(list.get(i));
+				i++;
+				return createBSTUtil(list,i, node.left);
+			}else {
+				node.right=new Node(list.get(i));
+				i++;
+				return createBSTUtil(list,i, node.right);
+			}
+		}
+		
+	}
+	void inorderTraversalUtil(Node root,List<Integer> inorder ){
+        if(root!=null){
+            inorderTraversalUtil(root.left,inorder);
+            inorder.add(root.val);
+            inorderTraversalUtil( root.right,inorder);
+        }
+   }
+
+	public static void main(String[] args) {
+		  List<Integer> list = new LinkedList<>();
+		  list.add(1);
+		  list.add(2);
+		  list.add(3);
+		  createBST(list);
+		  List<Integer> inorder = new ArrayList<>();
+		  inorderTraversalUtil(root,inorder );
+	        
+
+	}
+
+}

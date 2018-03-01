@@ -1,0 +1,13 @@
+208f54f0-b960-43a4-bcc9-ca3e89df8595\:credentialProfileName=satyamsah
+5a257c45-1411-47fa-a745-dd352d335a54\:credentialProfileName=lambdadynamodbuser
+899852d9-b00d-401c-ae00-76e848189347\:credentialProfileName=adminuser
+alwaysReloadWhenCredentialProfileFileModified=true
+cognitoIdentityId=us-east-1\:d161b30b-fff5-411b-bffd-f6bb96b67c84
+cognitoIdentityPoolId=us-east-1\:d4fdc07f-94fd-4cc6-94fb-f903657f05c1
+credentialProfileAccountIds=208f54f0-b960-43a4-bcc9-ca3e89df8595|d265f0f1-4f59-4a13-bac0-1218a0afb10c|5a257c45-1411-47fa-a745-dd352d335a54|899852d9-b00d-401c-ae00-76e848189347
+currentAccount=208f54f0-b960-43a4-bcc9-ca3e89df8595
+currentDefaultAccount=208f54f0-b960-43a4-bcc9-ca3e89df8595
+d265f0f1-4f59-4a13-bac0-1218a0afb10c\:credentialProfileName=default
+ec2PreferencesImported=true
+eclipse.preferences.version=1
+mobileAnalyticsClientId=6fc3f864-28fb-4de4-bd71-277d57a237e7

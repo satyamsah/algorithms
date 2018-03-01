@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;date.data.java&apos; to &apos;Solution.java&apos;&#x0D;&#x0A;- Original project: &apos;date&apos;&#x0D;&#x0A;- Original element: &apos;date.data.java&apos;&#x0D;&#x0A;- Renamed element: &apos;date.Solution.java&apos;" description="Rename compilation unit &apos;data.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;date{data.java" name="Solution.java" references="false" stamp="1507099618492" version="1.0"/>
+</session>

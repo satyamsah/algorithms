@@ -1,0 +1,17 @@
+package levelOrderTraversalEfficient;
+
+public class LevelOrderTraversal {
+	
+	Node root;
+	
+	class Node{
+		Node left;
+		Node right;
+		int data;
+	}
+
+	public static void main(String str){
+		
+	}
+	
+}

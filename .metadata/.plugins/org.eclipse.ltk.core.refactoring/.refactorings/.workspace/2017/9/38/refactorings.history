@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;StringAddition&apos; to &apos;StringBodmas&apos;&#x0D;&#x0A;- Original element: &apos;StringAddition&apos;&#x0D;&#x0A;- Renamed element: &apos;StringAddition&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;StringAddition&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=StringAddition" name="StringBodmas" references="true" stamp="1506178469251" version="1.0"/>
+</session>

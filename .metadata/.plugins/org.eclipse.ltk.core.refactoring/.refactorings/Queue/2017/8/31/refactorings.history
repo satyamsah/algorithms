@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ImplQueue.java&apos; to &apos;ImplementQueueUsingTwoStacks/src/naive&apos;&#x0D;&#x0A;- Original project: &apos;Queue&apos;&#x0D;&#x0A;- Destination element: &apos;ImplementQueueUsingTwoStacks/src/naive&apos;&#x0D;&#x0A;- Original element: &apos;naive.ImplQueue.java&apos;" description="Copy compilation unit" destination="=ImplementQueueUsingTwoStacks/src&lt;naive" element1="/src&lt;naive{ImplQueue.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1501647754222" units="1" version="1.0"/>
+</session>

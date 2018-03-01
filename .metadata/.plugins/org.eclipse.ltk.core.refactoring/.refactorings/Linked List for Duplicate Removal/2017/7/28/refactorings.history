@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ll.RemoveDuplicate&apos; to &apos;LLForDuplicateRemoval&apos;&#x0D;&#x0A;- Original project: &apos;Linked List for Duplicate Removal&apos;&#x0D;&#x0A;- Original element: &apos;ll.RemoveDuplicate&apos;&#x0D;&#x0A;- Renamed element: &apos;ll.LLForDuplicateRemoval&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RemoveDuplicate&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ll{RemoveDuplicate.java[RemoveDuplicate" matchStrategy="1" name="LLForDuplicateRemoval" qualified="false" references="true" similarDeclarations="false" stamp="1499785854594" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,40 @@
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class BST {
+	
+	static Node root;
+	class Node{
+		Node left;
+		Node right;
+		int val;
+		Node(int val){
+			this.val=val;
+		}
+	}
+	static Node createBST(List<Integer> list){
+		if(list.size()==0){
+			return null;
+		}
+		createBSTUtil(list,0,root);
+	}
+	
+
+	private static Node createBSTUtil(List<Integer> list, int i, Node root) {
+		if()
+		
+	}
+
+
+	public static void main(String[] args) {
+		  List<Integer> list = new LinkedList<>();
+		  list.add(1);
+		  list.add(2);
+		  list.add(3);
+		  createBST(list);
+	        
+
+	}
+
+}

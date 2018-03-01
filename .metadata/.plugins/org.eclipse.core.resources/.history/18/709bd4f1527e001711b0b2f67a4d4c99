@@ -1,0 +1,53 @@
+package bst;
+
+public class BinaryTree {
+
+	Node root;
+
+	
+	class Node{
+		Node left;
+		Node right;
+		int data;
+		
+		Node(int data){
+			this.data=data;
+		}
+	}
+	
+	void addLeft(){
+		
+	}
+	void addRight(){
+		
+	}
+	void search(){
+		
+	}
+	void levelorderTraversal(){
+		
+	}
+	boolean isBalanced{
+		
+	}
+	
+	boolean inorderTraversal{
+		
+	}
+	
+	boolean preOrderTraversal{
+		
+	}
+	boolean postOrderTraversal{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		BinaryTree bst= new BinaryTree();
+		
+		
+	}
+
+}

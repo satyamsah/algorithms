@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;naive.ImplementQueueStack&apos; to &apos;ImplementQueueUsing2Stack&apos;&#x0D;&#x0A;- Original project: &apos;ImplementQueueUsingTwoStacks&apos;&#x0D;&#x0A;- Original element: &apos;naive.ImplementQueueStack&apos;&#x0D;&#x0A;- Renamed element: &apos;naive.ImplementQueueUsing2Stack&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ImplementQueueStack&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;naive{ImplementQueueStack.java[ImplementQueueStack" matchStrategy="1" name="ImplementQueueUsing2Stack" qualified="false" references="true" similarDeclarations="false" stamp="1501647314930" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,16 @@
+import java.util.LinkedList;
+
+public class Graph {
+
+	LinkedList<Integer> arrll [];
+	
+	public Graph(int V){
+		
+	}
+	
+	public static void main(String args[]){
+		
+	}
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;abc.BST.java&apos; to &apos;BinaryTree.java&apos;&#x0D;&#x0A;- Original project: &apos;BTree-InorderSuceesor&apos;&#x0D;&#x0A;- Original element: &apos;abc.BST.java&apos;&#x0D;&#x0A;- Renamed element: &apos;abc.BinaryTree.java&apos;" description="Rename compilation unit &apos;BST.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;abc{BST.java" name="BinaryTree.java" references="false" stamp="1504707100492" version="1.0"/>
+</session>

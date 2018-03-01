@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CreateNewGraph.java&apos; to &apos;Graph-CheckIfPathIsAvailble/src/naive&apos;&#x0D;&#x0A;- Original project: &apos;BreadthFirsSearch(BFS)&apos;&#x0D;&#x0A;- Destination element: &apos;Graph-CheckIfPathIsAvailble/src/naive&apos;&#x0D;&#x0A;- Original element: &apos;abc.CreateNewGraph.java&apos;" description="Copy compilation unit" destination="=Graph-CheckIfPathIsAvailble/src&lt;naive" element1="/src&lt;abc{CreateNewGraph.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1504448316662" units="1" version="1.0"/>
+</session>

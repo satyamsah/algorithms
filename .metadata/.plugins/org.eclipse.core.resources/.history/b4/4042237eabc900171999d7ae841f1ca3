@@ -1,0 +1,11 @@
+import java.util.*;
+public class MyClass {
+    public static void main(String args[]) {
+
+        int [] arr={1,3,3,4,5};
+        Arrays.asList(arr);
+        for(int a: arr){
+            System.out.println(a);
+        }
+    }
+}

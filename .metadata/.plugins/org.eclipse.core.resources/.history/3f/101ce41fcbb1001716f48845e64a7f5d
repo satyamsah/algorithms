@@ -1,0 +1,22 @@
+package _3SUM;
+
+import java.util.*;
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> listOfList= new ArrayList<>();
+        for(int i=0;i<nums.length-2;i++){
+            for(int j=i+1;j<nums.length-1;j++){
+                 for(int k=j+1;k<nums.length;k++){
+                    if(nums[i]+nums[j]+nums[k]==0){
+                         ArrayList<Integer> singleList= new ArrayList<>();
+                         singleList.add(nums[i]); singleList.add(nums[j]); singleList.add(nums[k]);
+                         listOfList.add(singleList);
+                    }
+                }
+            } 
+        }
+      
+        return listOfList;
+        
+    }
+}

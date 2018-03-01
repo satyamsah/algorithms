@@ -1,0 +1,112 @@
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+class Node {
+	Node left;
+	Node right;
+	int val;
+
+	Node(int val) {
+		this.val = val;
+	}
+}
+
+public class BST {
+
+	static Node root;
+
+	static Node createBST(List<Integer> list) {
+		if (list.size() == 0) {
+			return null;
+		}
+		root = createBSTUtil(list, 0, root);
+		return root;
+	}
+
+	private static Node createBSTUtil(List<Integer> list, int i, Node node) {
+		if (i < list.size()) {
+			if (node == null) {
+				node = new Node(list.get(i));
+				i++;
+				createBSTUtil(list, i, node);
+			} else {
+				if (list.get(i) < node.val) {
+					node.left = new Node(list.get(i));
+					i++;
+					createBSTUtil(list, i, node.left);
+				} else {
+					node.right = new Node(list.get(i));
+					i++;
+					createBSTUtil(list, i, node.right);
+				}
+			}
+		}
+		return node;
+
+	}
+
+	static void inorderTraversalUtil(Node node, List<Integer> inorder) {
+		if (node != null) {
+			System.out.println(node.val);
+			inorderTraversalUtil(node.left, inorder);
+			// inorder.add(root.val);
+			inorderTraversalUtil(node.right, inorder);
+		}
+	}
+	
+	public static ArrayList<ArrayList<Integer>> permute(List<Integer> num) {
+		ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+	 
+		//start from an empty list
+		result.add(new ArrayList<Integer>());
+	 
+		for (int i = 0; i < num.size(); i++) {
+			//list of list in current iteration of the array num
+			ArrayList<ArrayList<Integer>> current = new ArrayList<ArrayList<Integer>>();
+	 
+			for (ArrayList<Integer> l : result) {
+				// # of locations to insert is largest index + 1
+				for (int j = 0; j < l.size()+1; j++) {
+					// + add num[i] to different locations
+					l.add(j, num.get(i));
+	 
+					ArrayList<Integer> temp = new ArrayList<Integer>(l);
+					current.add(temp);
+	 
+					//System.out.println(temp);
+	 
+					// - remove num[i] add
+					l.remove(j);
+				}
+			}
+	 
+			result = new ArrayList<ArrayList<Integer>>(current);
+		}
+	 
+		return result;
+	}
+
+	public static void main(String[] args) {
+		List<Integer> list = new LinkedList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
+//		Node root1 = createBST(list);
+		ArrayList<ArrayList<Integer>> listoflist= permute(list);
+		for(ArrayList<Integer> singlelist : listoflist){
+			Node root1=createBST(singlelist);
+		
+		List<Integer> inorder = new ArrayList<>();
+		inorderTraversalUtil(root1, inorder);
+		for (int nodeval : inorder) {
+			System.out.print(nodeval + ",");
+		}
+		}
+
+	}
+
+}

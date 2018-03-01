@@ -1,0 +1,42 @@
+package abc;
+
+import java.util.LinkedList;
+import java.util.Map;
+
+public class EnqueDequeUsingLL {
+
+	static class Node{
+		String type;
+		String name;
+		public Node(String type,String name){
+			this.type=type;
+			this.name=name;
+		}
+		public String getType() {
+			return type;
+		}
+		public String getName() {
+			return name;
+		}
+		
+	}
+	static LinkedList<Node> ll;
+	
+	public static void enqueue(Node n){
+		ll.add(n);
+	}
+	public static Node dequeue(){
+		return ll.removeFirst();
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		enqueue(new Node("cat", "Feona"));
+		enqueue(new Node("dog", "Jax"));
+		enqueue(new Node("dog", "Jax"));
+		enqueue(new Node("dog", "Jax"));
+		dequeue();
+		
+	}
+
+}

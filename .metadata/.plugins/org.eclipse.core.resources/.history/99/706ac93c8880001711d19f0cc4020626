@@ -1,0 +1,61 @@
+package levelOrderTraversalEfficient;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class LevelOrderTraversal {
+	
+	static Node root;
+	
+	static class Node{
+		Node left;
+		Node right;
+		int data;
+		
+		Node(int data){
+			this.data=data;
+			left=right=null;
+		}
+	}
+	
+	public static void traverseLineByLine(){
+		
+		Queue<Node>  queue = new LinkedList<Node>();
+		queue.add(root);
+		
+		while(true){
+			if(root==null){
+				return;
+			}
+			
+			int linesize=queue.size();
+			if(linesize==0){
+				break
+			}
+			
+			while(linesize>0){
+				
+				Node top= queue.peek();
+				System.out.println(queue.remove().data);
+				queue.add(top.left);
+				queue.add(top.right);
+				linesize--;
+				
+			}
+			
+			
+		}
+		
+	}
+
+	public static void main(String str){
+		LevelOrderTraversal tree= new LevelOrderTraversal();
+		tree.root= new Node(33);
+		tree.root.left= new Node(22);
+		tree.root.left= new Node(44);
+		tree.root.left= new Node(55);
+		tree.root.left= new Node(66);
+		traverseLineByLine();
+	}
+	
+}

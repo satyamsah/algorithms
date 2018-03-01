@@ -1,0 +1,79 @@
+package abc;
+
+import java.util.LinkedList;
+
+
+public class EnqueDequeUsingLL {
+
+	static class Node{
+		String type;
+		String name;
+		public Node(String type,String name){
+			this.type=type;
+			this.name=name;
+		}
+		public String getType() {
+			return type;
+		}
+		public String getName() {
+			return name;
+		}
+		
+	}
+	static LinkedList<Node> ll=new LinkedList<Node>();
+	
+	public static void enqueue(Node node){
+		ll.addFirst(node);
+	}
+	public static Node dequeue(){
+		return ll.removeLast();
+	}
+	
+	public static boolean dequeueDog(){
+		Boolean b=false;
+		int index=0;
+		while(index<=ll.size()){
+			if(ll.get(index).getType()=="Dog"){
+				ll.remove(index);
+				b=true;
+				break;
+			}
+			else
+				b=false;
+			index++;
+		}
+		return b;
+			
+	}
+	public static boolean dequeueCat(){
+		Boolean b=false;
+		int index=0;
+		while(index<=ll.size()){
+			if(ll.get(index).getType()=="Cat"){
+				ll.remove(index);
+				b=true;
+				break;
+			}
+			else
+				b=false;
+			index++;
+		}
+		return b;
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		enqueue(new Node("dog", "Jax"));
+		enqueue(new Node("dog", "Jax"));
+		enqueue(new Node("dog", "Marry"));
+		enqueue(new Node("cat", "Roger"));
+		Node n=dequeue();
+		System.out.println(n.getName());
+		System.out.println(n.getType());
+		
+	}
+
+}

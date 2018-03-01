@@ -1,0 +1,13 @@
+import java.util.*;
+public class MyClass {
+    public static void main(String args[]) {
+
+        int [] arr={1,3,3,4,5};
+
+        pull1(Arrays.asList(arr));
+    }
+    
+    public static void pull1 (ArrayList<Integer>){
+    	
+    }
+}

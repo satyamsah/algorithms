@@ -1,0 +1,31 @@
+package abc;
+
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.Map;
+
+public class EnqueDeque {
+
+	static LinkedList<Map<String, String>> ll;
+	private static Map<String, String> map;
+	
+	static void enqueue(map){
+		
+	}
+	static void dequeue()
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		map.put("Amana", "dog");
+    	map.put("Joe", "cat");
+    	map.put("Jakx", "dog");
+    	map.put("Rack", "cat");
+    	map.put("Husky", "dog");
+    	int i=0;
+    	while (i<=map.size()-1){
+    		enqueue(map);
+    	}
+	}
+
+}

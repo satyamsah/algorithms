@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Solution.java&apos; to &apos;SetMatrixtoZero/src/moreefficient&apos;&#x0D;&#x0A;- Original project: &apos;SetMatrixtoZero&apos;&#x0D;&#x0A;- Destination element: &apos;SetMatrixtoZero/src/moreefficient&apos;&#x0D;&#x0A;- Original element: &apos;abc.Solution.java&apos;" description="Copy compilation unit" destination="/src&lt;moreefficient" element1="/src&lt;abc{Solution.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1511650268877" units="1" version="1.0"/>
+</session>

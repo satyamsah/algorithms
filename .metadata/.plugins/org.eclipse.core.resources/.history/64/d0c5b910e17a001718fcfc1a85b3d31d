@@ -1,0 +1,14 @@
+package abc;
+
+import java.util.LinkedList;
+import java.util.Map;
+
+public class EnqueDeque {
+
+	LinkedList<Map<String, String>>
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

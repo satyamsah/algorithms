@@ -1,0 +1,26 @@
+
+class Solution {
+    public double myPow(double x, int n) {
+        if(n==0){
+            return 1;
+        }
+        double res=1.0;
+        if(n>0){
+            for(int i=1;i<=n;i++){
+                res=res*x;    
+            }
+            return res;
+        }else{
+            for(int i=n;i<0;i++){
+                res=res*(1/x);    
+            }
+            return res;
+        }
+      
+    }
+    
+    public static void main(String[] args){
+    	Solution sol= new Solution();
+    	System.out.println(sol.myPow(4, 2));
+    }
+}

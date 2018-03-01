@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RemoveString&apos; to &apos;RemoveDuplicateInLL&apos;" description="Rename resource &apos;RemoveString&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/RemoveString" name="RemoveDuplicateInLL" stamp="1499782756988" updateReferences="true"/>
+</session>

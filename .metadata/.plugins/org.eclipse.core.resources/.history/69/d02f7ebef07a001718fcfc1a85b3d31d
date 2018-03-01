@@ -1,0 +1,18 @@
+package abc;
+
+import java.util.LinkedList;
+import java.util.Map;
+
+public class EnqueDequeUsingLL {
+
+	static class Node{
+		String type;
+		String name;
+	}
+	static LinkedList<Node> ll;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

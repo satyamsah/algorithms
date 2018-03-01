@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Solution.java&apos; to &apos;Interval.java&apos;&#x0D;&#x0A;- Original project: &apos;Merge Interval&apos;&#x0D;&#x0A;- Original element: &apos;Solution.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Interval.java&apos;" description="Rename compilation unit &apos;Solution.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Solution.java" name="Interval.java" references="false" stamp="1518988617171" version="1.0"/>
+</session>

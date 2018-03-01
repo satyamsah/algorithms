@@ -1,0 +1,25 @@
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class BST {
+	
+	class Node{
+		Node left;
+		Node right;
+		int val;
+		Node(int val){
+			this.val=val;
+		}
+	}
+
+	public static void main(String[] args) {
+		  List<Integer> list = new LinkedList<>();
+		  list.add(1);
+		  list.add(2);
+		  list.add(3);
+	        
+
+	}
+
+}

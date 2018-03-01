@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LinkedList.java&apos; to &apos;MergerofTwoLL/src/abc&apos;&#x0D;&#x0A;- Original project: &apos;LinkedList&apos;&#x0D;&#x0A;- Destination element: &apos;MergerofTwoLL/src/abc&apos;&#x0D;&#x0A;- Original element: &apos;abc.LinkedList.java&apos;" description="Copy compilation unit" destination="=MergerofTwoLL/src&lt;abc" element1="/src&lt;abc{LinkedList.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1500044200086" units="1" version="1.0"/>
+</session>
