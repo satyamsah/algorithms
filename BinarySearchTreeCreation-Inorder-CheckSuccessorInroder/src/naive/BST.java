@@ -29,10 +29,15 @@ public class BST {
 		}
 		
 			return  Integer.MAX_VALUE;
-		
-		
 	}
-	
+	static void inorder123(Node root){
+		if(root==null){
+			return;
+		}
+		inorder123(root.left);
+		System.out.println(root.data);
+		inorder123(root.right);
+	}
 	static  List<Integer>  inOrderUtil(Node root,List<Integer> arrayofInorderTraversal){
 		if(root==null){
 			return null;
@@ -69,7 +74,43 @@ public class BST {
 	
 	}
 	
+	static void insertIntoBST(int key){
+		//System.out.println(key);
+		Node roottemp=root;
+//		if(root!=null){
+//			System.out.println(roottemp.data);
+//		}
+		
+		 root=insertIntoBSTUtil(roottemp,key);
+		//System.out.println("hi");
+		
+	}
 	
+	static Node insertIntoBSTUtil(Node roottemp,int k){
+
+		if(roottemp==null){
+			roottemp=new Node(k);
+			return roottemp;
+		}else if(roottemp.data<k){
+			if(roottemp.right!=null){
+				return insertIntoBSTUtil(roottemp.right,k);
+				
+			}else{
+				roottemp.right=new Node(k);
+				//System.out.println("IseratRtihgt");
+				return root;
+			}
+		}else{
+			if(roottemp.left!=null){
+				return insertIntoBSTUtil(roottemp.left,k);
+			}else{
+				roottemp.left=new Node(k);
+				//System.out.println("Left");
+				return root;
+			}
+		}
+		
+	}
 	 public boolean hasPathSum( Node root, int sum) {
 	        
 	        if(root==null){
@@ -89,16 +130,21 @@ public class BST {
 	       
 	    }
 	public static void main(String [] arr){
-		root= new Node(1);  
-		root.left= new Node(-2);
-		root.right= new Node(3);
+//		root= new Node(1);  
+//		root.left= new Node(-2);
+//		root.right= new Node(3);
+		insertIntoBST(2);
+		insertIntoBST(3);
+		insertIntoBST(-1);
+		insertIntoBST(4);
+		insertIntoBST(-5);
 		
-		root.left.right= new Node(-1);
-		root.right.left= new Node(2);
-		root.right.right= new Node(6);
+//		root.left.right= new Node(-1);
+//		root.right.left= new Node(2);
+//		root.right.right= new Node(6);
+		inorder123(root);
+		//System.out.println(isBST(root));
 		
-		System.out.println(isBST(root));
-		
-		System.out.println(inOrder(root,3));
+		//System.out.println(inOrder(root,3));
 	}
 }
