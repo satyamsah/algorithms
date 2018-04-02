@@ -1,0 +1,18 @@
+
+
+
+public class DoublyLinkedList {
+
+	public class Node{
+		Node prev;
+		Node next;
+		int val;
+		public DoublyLinkedList(){
+			
+		}
+	}
+	public static void main(String[] args){
+		DoublyLinkedList dlll= new DoublyLinkedList();
+	}
+	
+}

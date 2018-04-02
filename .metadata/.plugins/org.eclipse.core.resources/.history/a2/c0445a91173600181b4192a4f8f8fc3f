@@ -1,0 +1,19 @@
+import java.util.List;
+
+public class Tries {
+
+	TrieNode root=null;
+	class TrieNode{
+		char[] children= new char[26];
+		boolean isEndOfWord;
+	}
+	
+	void insert(String word){
+		
+	}
+	void search(String word){
+		
+	}
+	
+
+}

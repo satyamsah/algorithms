@@ -1,0 +1,64 @@
+
+
+
+public class DoublyLinkedList {
+
+	
+	Node head;
+	public class Node{
+		Node prev;
+		Node next;
+		int val;
+		
+
+		public Node(int val){
+			this.val=val;
+		}
+	}
+	
+	void insertatStart(int val){
+		Node node= new Node(val);
+		if(head==null){
+			head=node;
+		}else{
+			node.next=head;
+			head.prev=node;
+		}
+	}
+	
+	void insertatEnd(int val){
+		Node curr=head;
+		while(curr!=null){
+			
+		}
+	}
+	void deleteatHead(){
+		
+	}
+	
+	void deleteatEnd(){
+		
+	}
+	
+	insertANodeatposition(int val){
+		
+	}
+	deleteNodeatposition(int val){
+		
+	}
+	
+	void display(){
+		Node curr=head;
+		while(curr!=null){
+			System.out.println(curr.val);
+			curr=curr.next;
+		}
+	}
+	public static void main(String[] args){
+		DoublyLinkedList dlll= new DoublyLinkedList();
+		
+		dlll.insertatStart(20);
+		dlll.remove(30);
+	}
+	
+}

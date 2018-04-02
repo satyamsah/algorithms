@@ -1,0 +1,40 @@
+
+
+
+public class DoublyLinkedList {
+
+	
+	Node head;
+	public class Node{
+		Node prev;
+		Node next;
+		int val;
+		
+
+		public Node(int val){
+			this.val=val;
+		}
+	}
+	
+	void insertatStart(int val){
+		
+	}
+	
+	void insertatEnd(int val){
+		
+	}
+	void deleteatHead(){
+		
+	}
+	
+	void deleteatEnd(){
+		
+	}
+	public static void main(String[] args){
+		DoublyLinkedList dlll= new DoublyLinkedList();
+		
+		dlll.insert(20);
+		dlll.remove(30);
+	}
+	
+}

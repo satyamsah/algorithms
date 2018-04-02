@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;BTree-InorgerPredecessor&apos; to &apos;BTree-InorderPredecessor&apos;&#x0D;&#x0A;- Original element: &apos;BTree-InorgerPredecessor&apos;&#x0D;&#x0A;- Renamed element: &apos;BTree-InorgerPredecessor&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;BTree-InorgerPredecessor&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=BTree-InorgerPredecessor" name="BTree-InorderPredecessor" references="true" stamp="1520149572560" version="1.0"/>
+</session>

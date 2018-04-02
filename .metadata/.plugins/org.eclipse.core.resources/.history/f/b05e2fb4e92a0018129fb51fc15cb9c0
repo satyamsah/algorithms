@@ -1,0 +1,153 @@
+package naive;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BST {
+
+	
+	static Node root; 
+	static class Node{
+		Node right=null;
+		Node left=null;
+		int data;
+		public Node(int data){
+			this.data=data;
+		}
+	}
+	
+	static Integer inOrder(Node root,int number){
+		List<Integer> arrayofInorderTraversal= new ArrayList<>();
+		ArrayList<Integer> ans=(ArrayList<Integer>) inOrderUtil(root,arrayofInorderTraversal);
+		System.out.println(ans.size());
+		
+		for(int i=0;i<ans.size()-1;i++){
+			if(number==ans.get(i)){
+				return ans.get(i+1);
+			}
+		}
+		
+			return  Integer.MAX_VALUE;
+	}
+	static void inorder123(Node root){
+		if(root==null){
+			return;
+		}
+		inorder123(root.left);
+		System.out.println(root.data);
+		inorder123(root.right);
+	}
+	static  List<Integer>  inOrderUtil(Node root,List<Integer> arrayofInorderTraversal){
+		if(root==null){
+			return null;
+		}
+		inOrderUtil(root.left, arrayofInorderTraversal);
+		//System.out.println(root.data);
+		arrayofInorderTraversal.add(root.data);
+		inOrderUtil(root.right, arrayofInorderTraversal);
+		
+		return arrayofInorderTraversal;
+		
+	}
+	
+	static int isBST(Node root){
+		if(root==null){
+			return 0;
+		}
+		if(root.left!=null){
+			if(root.left.data>root.data){
+				return -1;
+			}	
+		
+		}
+		if(root.right!=null){
+			 if(root.right.data<root.data){
+					return -1;
+			 }
+		}
+		
+		return Math.min(isBST(root.left),isBST(root.right));
+		
+		
+		
+	
+	}
+	
+	static void insertIntoBST(int key){
+		System.out.println(key);
+		Node roottemp=root;
+		if(root!=null){
+			System.out.println(roottemp.data);
+		}
+		
+		insertIntoBSTUtil(roottemp,key);
+		System.out.println("hi");
+		
+	}
+	
+	static void insertIntoBSTUtil(Node roottemp,int k){
+		if(roottemp!=null){
+			System.out.println("insde"+roottemp.data);
+		}
+		
+		if(roottemp==null){
+			roottemp=new Node(k);
+			return;
+		}else if(roottemp.data<k){
+			if(roottemp.right!=null){
+				insertIntoBSTUtil(roottemp.right,k);
+				
+			}else{
+				roottemp.right=new Node(k);
+				System.out.println("IseratRtihgt");
+				return;
+			}
+		}else if(roottemp.data>=k){
+			if(roottemp.left!=null){
+				insertIntoBSTUtil(roottemp.left,k);
+			}else{
+				roottemp.left=new Node(k);
+				System.out.println("Left");
+				return;
+			}
+		}
+		
+	}
+	 public boolean hasPathSum( Node root, int sum) {
+	        
+	        if(root==null){
+	            return false;
+	        }
+	        else if(root.data==sum){
+	            if(root.left==null && root.right==null){
+	                return true;
+	            }
+	        }
+	        else{
+	     
+	             return hasPathSum( root.left, sum- root.data)|| hasPathSum( root.right,  sum-root.data);
+	                 
+	        }
+			return false;
+	       
+	    }
+	public static void main(String [] arr){
+//		root= new Node(1);  
+//		root.left= new Node(-2);
+//		root.right= new Node(3);
+		insertIntoBST(2);
+		insertIntoBST(3);
+		insertIntoBST(-1);
+		insertIntoBST(4);
+		insertIntoBST(-5);
+		
+//		root.left.right= new Node(-1);
+//		root.right.left= new Node(2);
+//		root.right.right= new Node(6);
+		inorder123(root);
+		//System.out.println(isBST(root));
+		
+		//System.out.println(inOrder(root,3));
+	}
+}

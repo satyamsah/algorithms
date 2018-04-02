@@ -1,0 +1,121 @@
+import java.awt.geom.CubicCurve2D;
+
+public class DoublyLinkedList {
+
+	
+	Node head;
+	public class Node{
+		Node prev;
+		Node next;
+		int val;
+		
+
+		public Node(int val){
+			this.val=val;
+		}
+	}
+	
+	void insertatStart(int val){
+		Node node= new Node(val);
+		if(head==null){
+			head=node;
+		}else{
+			node.next=head;
+			head.prev=node;
+		}
+	}
+	
+	void insertatEnd(int val){
+		Node node= new Node(val);
+		Node curr=head;
+		if(head==null){
+			head=node;
+		}
+		while(curr.next!=null){
+			curr=curr.next;
+		}
+		curr.next=node;
+		node.prev=curr;
+		
+	}
+	void deleteatHead(){
+		if(head!=null){
+			head=head.next;
+		}
+	}
+	
+	void deleteatEnd(){
+		Node curr=head;
+		while(curr.next!=null){
+			curr=curr.next;
+		}
+		if(curr.prev==null){
+			head=null;
+		}
+		else{
+			curr.prev.next=null;
+		}
+		
+	}
+	
+	boolean insertANodeatposition(int val,int pos,int size){
+		if((head==null && pos>1) || (pos>size+1)){
+			return false;
+		}
+		if(head==null){
+			head=new Node(val);
+			return true;
+		}
+		Node curr=head;
+		for(int i=1;i<pos;i++){
+			curr=curr.next;
+		}
+		Node node= new Node(val);
+		Node nextN=curr.next;
+		curr.next=node;
+		node.prev=node;
+		if(nextN==null){
+			node.next=null;
+			return true;
+		}
+		else{
+			nextN.prev=node;
+			node.next=nextN;
+		}
+		return true;
+		
+	}
+	boolean deleteNodeatposition(int val,int pos, int size){
+		if((head==null) || pos<0 || pos>size){
+			return false;
+		}
+		Node curr=head;
+
+		
+		for(int i=1;i<pos;i++){
+			curr=curr.next;
+		}
+		if(curr.next==null && curr.prev==null){
+			head=null;
+			return true;
+		}
+		
+		curr.prev.next=curr.next;
+		curr.next.prev=curr.prev;
+	}
+	
+	void display(){
+		Node curr=head;
+		while(curr!=null){
+			System.out.println(curr.val);
+			curr=curr.next;
+		}
+	}
+	public static void main(String[] args){
+		DoublyLinkedList dlll= new DoublyLinkedList();
+		
+		dlll.insertatStart(20);
+		dlll.remove(30);
+	}
+	
+}

@@ -1,0 +1,27 @@
+import java.util.List;
+
+public class Tries {
+
+	TrieNode root=null;
+	class TrieNode{
+		TrieNode[] children= new TrieNode[26];
+		boolean isEndOfWord;
+		
+		public TrieNode(){
+			isEndOfWord=false;
+			for(int i=0;i<26;i++){
+				children[i]=null;
+			}
+		}
+	}
+	
+	
+	void insert(String word){
+		
+	}
+	void search(String word){
+		
+	}
+	
+
+}
